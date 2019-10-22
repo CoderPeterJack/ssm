@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coderpengjiang.dao.CpjUserDao">
+    <sql id="userField">
+        a.id as "id",
+        a.name as "name",
+        a.password as "password"
+    </sql>
+    <!--获取所有的用户-->
+    <select id="findAll" resultType="com.coderpengjiang.model.CpjUser">
+        select
+        <include refid="userField"/>
+        from cpj_user as a
+    </select>
+</mapper>
