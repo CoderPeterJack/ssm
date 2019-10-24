@@ -13,6 +13,7 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
     <context:component-scan base-package="com.coderpengjiang.controller"/>
     <!--设置配置方案-->
     <mvc:annotation-driven/>
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
 
     <!--配置JSP 显示ViewResolver(视图解析器)-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

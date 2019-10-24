@@ -3,6 +3,9 @@ package com.coderpengjiang.service.impl;
 import com.coderpengjiang.dao.CpjUserDao;
 import com.coderpengjiang.model.CpjUser;
 import com.coderpengjiang.service.CpjUserService;
+import org.springframework.beans.factory.config.AbstractFactoryBean;
+import org.springframework.beans.factory.support.AbstractBeanFactory;
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
