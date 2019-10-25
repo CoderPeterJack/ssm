@@ -1,6 +1,7 @@
 package com.coderpengjiang.dao;
 
 import com.coderpengjiang.model.CpjUser;
+import org.apache.ibatis.session.RowBounds;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -14,4 +15,5 @@ import java.util.List;
 @Repository
 public interface CpjUserDao {
     List<CpjUser> findAll();
+
 }

@@ -13,13 +13,14 @@ import java.util.List;
  * @author: CoderPengJiang
  * @create: 2019-10-23 21:51
  **/
-public class CpjUserDaoTest extends BaseJunit4Test{
-    @Resource
-    private CpjUserDao cpjUserDao;
-
-    @Test
-    public void testFindAll(){
-        List<CpjUser> userList=cpjUserDao.findAll();
-        System.out.println(userList.size());
-    }
-}
+//public class CpjUserDaoTest extends BaseJunit4Test{
+//    @Resource
+//    private CpjUserDao cpjUserDao;
+//
+//    @Test
+//    public void testFindAll(){
+//        List<CpjUser> userList=cpjUserDao.findAll();
+//        System.out.println(userList.size());
+//    }
+//}
+//

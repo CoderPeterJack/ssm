@@ -2,6 +2,7 @@ package com.coderpengjiang.controller;
 
 import com.coderpengjiang.model.CpjUser;
 import com.coderpengjiang.service.CpjUserService;
+import org.apache.ibatis.session.RowBounds;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,19 +17,32 @@ import java.util.List;
  * @author: CoderPengJiang
  * @create: 2019-10-22 19:12
  **/
-@Controller
-@RequestMapping(value = "/user")
-public class CpjUserController {
-    @Resource
-    private CpjUserService cpjUserService;
+//@Controller
+//@RequestMapping(value = "/user")
+//public class CpjUserController {
+   // @Resource
+   // private CpjUserService cpjUserService;
+//
+   // @GetMapping("/findAll")
+   // public String findAll(Model model) {
+   //     List<CpjUser> cpjUserList = cpjUserService.findAll();
+   //     for (CpjUser cpjUser : cpjUserList) {
+   //         System.out.println("id:" + cpjUser.getId());
+   //         System.out.println("name:" + cpjUser.getName());
+   //     }
+   //     return "hello";
+   // }
 
-    @GetMapping("/findAll")
-    public String findAll(Model model) {
-        List<CpjUser> cpjUserList = cpjUserService.findAll();
-        for (CpjUser cpjUser : cpjUserList) {
-            System.out.println("id:" + cpjUser.getId());
-            System.out.println("name:" + cpjUser.getName());
-        }
+
+//}
+
+//spring MVC常用注解
+@Controller
+@RequestMapping(value="/user")
+public class CpjUserController {
+    @GetMapping("/hello")
+    public String hello(Model model){
+        model.addAttribute("message","hello cpj");
         return "hello";
     }
 }
